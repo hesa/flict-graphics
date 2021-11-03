@@ -1,0 +1,9 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: flict
+Upstream-Contact: Henrik Sandklef <hesa@sandklef.com>
+Source: https://github.com/vinland-technology/flict/
+
+Files: flict-log.svg
+Copyright: 2021 Jens Reuterberg
+License: GPL-3.0-or-later
+

@@ -9,7 +9,7 @@ SPDX-License-Identifier: GPL-3.0-or-later
 
 # Flict graphics
 
-This repository is used for graphics related to [flict](https://github.com/vinland-technology/flict) (FOSS License Compatibility Tool).
+This repository is used for managing graphics related to [flict](https://github.com/vinland-technology/flict) (FOSS License Compatibility Tool).
 
 # Contributors
 

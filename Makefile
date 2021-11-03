@@ -18,7 +18,7 @@ all:
 	do                                     \
 		for format in $(FORMATS);      \
 		do                             \
-                  echo inkscape -w $${size} -h $${size} $${FLICT_LOGO_SVG} -e $(GENERATED_DIR)/$(FLICT_LOGO)-$${size}-$${size}.$${format} ;\
+                  inkscape -w $${size} -h $${size} $${FLICT_LOGO_SVG} -e $(GENERATED_DIR)/$(FLICT_LOGO)-$${size}-$${size}.$${format} ;\
                 done \
         done
 

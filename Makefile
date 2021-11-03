@@ -6,10 +6,24 @@ FLICT_LOGO = flict-logo
 FLICT_LOGO_SVG = $(FLICT_LOGO).svg
 GENERATED_DIR=generated
 
+#
+# Formats and sizes to generate
+#
+FORMATS = png jpg
 SIZES = 2048 1024 512 128 64 
 
+
 all:
-	$(foreach size,$(SIZES), inkscape -w $(size) -h $(size) $(FLICT_LOGO_SVG) -e $(GENERATED_DIR)/$(FLICT_LOGO)-$(size)-$(size).png ;)	
+	@for size in $(SIZES);                  \
+	do                                     \
+		for format in $(FORMATS);      \
+		do                             \
+                  echo inkscape -w $${size} -h $${size} $${FLICT_LOGO_SVG} -e $(GENERATED_DIR)/$(FLICT_LOGO)-$${size}-$${size}.$${format} ;\
+                done \
+        done
 
 clean:
 	rm *~
+
+reuse:
+	reuse lint
